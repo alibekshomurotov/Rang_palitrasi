@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # yoki master - qaysi branch ishlatsangiz
+      - main  # yoki master
   workflow_dispatch:
 
 permissions:
@@ -25,11 +25,12 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '18'  # Node.js 18 versiyasini ishlatish (barqarorroq)
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        # npm install ishlatiladi, npm ci emas
+        run: npm install
 
       - name: Build project
         run: npm run build
