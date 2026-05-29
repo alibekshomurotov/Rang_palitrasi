@@ -29,7 +29,3 @@ Tasodifiy ranglar palitrasini yaratuvchi, nusxalovchi va boshqaruvchi zamonaviy 
 - **GitHub Actions** - CI/CD va avtomatik deploy
 - **GitHub Pages** - Hosting
 
-
-
-# 4. Development server ni ishga tushirish
-npm run dev
